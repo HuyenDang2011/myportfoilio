@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+    src: url("font/Futura-CondensedLight.otf");
+    font-family:futura_light;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    src: url("font/FuturaStd-Bold.otf");
+    font-family:futura_bold;
+    font-weight: normal;
+    font-style: normal;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,1.00);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(251,235,27,0.5);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(251,235,27,1.00);}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgba(0,0,0,1.00);
+    cursor: url("1x/c1.png"), auto;
+}
+.header{
+    width: 100%;
+    height: 150px;
+    padding: 25px 0;
+    margin-top: 25px;
+}
+.logo a{
+    text-decoration: none;
+    font-family: futura_bold;
+    font-size: 35px;
+    color: rgba(255,255,255,1.00);    
+}
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes flash {
+  0%, 50%, 100% {
+  opacity: 1;
+  }
+  
+  25%, 75% {
+  opacity: 0;
+  }
+  }  
+  @keyframes flash {
+  0%, 50%, 100% {
+  opacity: 1;
+  }
+  
+  25%, 75% {
+  opacity: 0;
+  }
+  } 
+.nav{
+    font-family: futura_light;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+/*    padding-right: 60px;*/
+/*    align-items: flex-start;*/
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav li{
+    padding-right: 100px;
+    padding-left: 10px;
+}
+.nav a{
+    font-size: 25px;
+    color: rgba(255,255,255,1.00);
+    text-decoration: none;
+    position: fixed;
+    z-index: 100;
+}
+.nav li a:hover{
+    padding: 2px 5px;
+    color: rgba(0,0,0,1.00);
+    background: rgba(255,255,255,1.00);
+    border-radius: 12px;
+    transition-duration: 0.2s;
+}
+/*header*/
+.banner img{
+    width: 100%;
+    object-fit: cover;
+}
+/*banner*/
+.about{
+    width: 100%;
+    height: 700px;
+}
+.content-ab{
+    margin: 20px 0;
+}
+.content-ab h1{
+    font-family: futura_bold;
+    font-size: 35px;
+    color: rgba(255,255,255,1.00);
+    margin-bottom: 20px;
+}
+.content-ab .subhead p{
+    margin-top: 20px;
+    color: rgba(255,255,255,1.00);
+    font-family: futura_light;
+    font-size: 25px;
+}
+.content-ab p{
+    margin-bottom: 40px;
+    color: rgba(255,255,255,1.00);
+    font-family: futura_light;
+    font-size: 25px;
+}
+.right-content{
+    position: relative;
+    height: 665px;
+}
+.map img{
+    width: 100%;
+    margin-top: 40px;
+}
+.element-2{
+    position: absolute;
+    right: 0px;
+    top: 500px;
+    z-index: 55;
+}
+/*about*/
+.works{
+    width: 80%;
+    margin: 0 auto;
+}
+.work-1{
+    width:100%;
+    height: auto;
+}
+.work-2{
+    width:100%;
+    height: auto;
+}
+.left img{
+    width: 100%;
+}
+.top-content{
+    padding: 0 50px;
+}
+.top-content h1{
+    font-family: futura_bold;
+    font-size: 35px;
+    color: rgba(255,255,255,1.00);
+    padding-top: 40px;
+}
+.top-content p{
+    font-family: futura_light;
+    font-size: 20px;
+    padding: 20px 0;
+    color: rgba(255,255,255,1.00);
+}
+.revert{
+    flex-direction: row-reverse;
+}
+.top-content-2{
+    text-align: right;
+    padding: 0 50px;
+}
+.top-content-2 h1{
+    font-family: futura_bold;
+    font-size: 35px;
+    color: rgba(255,255,255,1.00);
+    padding-top: 40px;
+}
+.top-content-2 p{
+    font-family: futura_light;
+    font-size: 20px;
+    padding: 20px 0;
+    color: rgba(255,255,255,1.00);
+}
+#heading{
+    height: 55px;
+    background: rgba(251,235,27,0.85);
+    font-family: futura_bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: flex;
+    
+}
+.scroll-text{
+    justify-content: center;
+    align-items: center
+}
+/*gallery*/
+#footer{
+    width: 100%;
+    height: auto;
+    background: rgba(251,235,27,1.00);
+    padding: 50px 0 10px 0;
+    cursor: url("1x/c4.png"), auto;
+    position: relative;
+    
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: futura_light;
+    font-size: 20px;
+}
+.edit{
+    padding: 100px 0 0 80px;
+/*    text-align: center;*/
+    font-family: futura_bold;
+    font-size: 35px;
+     -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255,255,255,1.00);
+    
+}
+.edit2{
+    padding: 100px 80px 0 0;
+    text-align: right;
+    font-family: futura_bold;
+    font-size: 35px;
+     -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255,255,255,1.00);
+    
+}
+.project-6{
+    margin-bottom: 200px;
+}
+/*Works*/
+.left-foot p{
+    text-align: center;
+}
+.left-foot h1{
+    text-align: center;
+}
+.is{
+    
+    transform: scale(0.5);
+}
+.is:hover {
+    opacity: 0.5;
+    transform: scale(1.3); 
+    -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+    
+}
+.social{
+    width: 425px;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    justify-content: center;
+}
+.social li{
+    list-style: none;
+}
+.social li a img{
+    padding-top: 10px;
+    transform: scale(1); 
+}
+.social li a img:hover{
+    opacity: 0.5;
+    transform: scale(1.3); 
+    -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.left-foot{
+    padding-left: 100px;
+}
+.left-foot p{
+    font-family: futura_light;
+    font-size: 25px;
+}
+.left-foot h1{
+    font-family: futura_bold;
+    font-size: 35px;
+}
+.footer .container{
+    width: 85%;
+}
+/*Form*/
+
+/*footer*/
+.float-btn{
+    position:fixed;
+    z-index: 999;
+    bottom: 50px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    padding-right: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 4px 0;
+}
+.btn .icon{
+    font-size: 24px;
+}
+.icon img{
+    width:100%;
+}
+
+
+
+
+
+
+/*Backtohome*/
